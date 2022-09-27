@@ -7,6 +7,20 @@ public class SetApplication {
 
 	public static void main(String[] args) {
 
+		Set<Person> people = new HashSet<>();
+		
+		people.add(new Person(111111111, "Bennett", "Hammock"));
+		people.add(new Person(111111111, "Bennett", "Hammock"));
+		
+		for(Person person: people) {
+			System.out.println(person);
+		}
+		
+	//	example1();
+
+	}
+
+	private static void example1() {
 		Set<Integer> uniqueNumbers = new LinkedHashSet<>();
 
 		uniqueNumbers.add(1);
@@ -28,8 +42,6 @@ public class SetApplication {
 		for (String element : uniqueNames) {
 			System.out.println(element);
 		}
-		
-		
 	}
 
 	private static void printSetToConsole(Set<Integer> elements) {
